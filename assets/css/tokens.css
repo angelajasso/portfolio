@@ -1,0 +1,22 @@
+/* tokens.css */
+
+:root {
+  /* Colors */
+  --color-primary: #2563eb;
+  --color-secondary: #1e293b;
+  --color-background: #ffffff;
+  --color-text: #111827;
+
+  /* Typography */
+  --font-base: 16px;
+  --font-lg: 1.25rem;
+
+  /* Spacing */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+}

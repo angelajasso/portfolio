@@ -1,0 +1,23 @@
+/* main.css */
+
+@import url("./tokens.css");
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body base */
+body {
+  font-size: var(--font-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: Arial, sans-serif;
+}
+
+/* Layout base */
+main {
+  padding: var(--space-md);
+}

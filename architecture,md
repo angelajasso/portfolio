@@ -1,0 +1,26 @@
+# Architecture Overview
+
+## Design Approach
+
+This project follows a modular architecture where each part of the system
+has a clearly defined responsibility.
+
+## Core Principles
+
+- Low coupling
+- High cohesion
+- Scalability
+- Maintainability
+
+## Frontend Strategy
+
+The UI is divided into:
+
+- Components → reusable elements
+- Layouts → structural patterns
+- Pages → complete views
+
+## Future Evolution
+
+This architecture can transition into component-based frameworks
+like React or Vue without major restructuring.
