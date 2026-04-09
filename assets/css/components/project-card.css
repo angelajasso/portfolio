@@ -1,0 +1,16 @@
+.project-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  backdrop-filter: var(--blur);
+
+  transition:
+    transform 0.3s ease,
+    border 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primary);
+}
