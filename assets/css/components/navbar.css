@@ -1,0 +1,86 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background: rgba(17, 17, 23, 0.6);
+  backdrop-filter: var(--blur);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Layout interno */
+.navbar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+/* Logo */
+.navbar__logo a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Nav */
+.navbar__list {
+  display: flex;
+  gap: var(--space-lg);
+  list-style: none;
+}
+
+.navbar__list a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  position: relative;
+
+  transition: color 0.2s ease;
+}
+
+/* Hover elegante */
+.navbar__list a:hover {
+  color: var(--color-text);
+}
+
+/* Línea animada */
+.navbar__list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.navbar__list a:hover::after {
+  width: 100%;
+}
+
+/* Actions */
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.navbar__icon img {
+  width: 20px;
+  opacity: 0.7;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navbar__icon:hover img {
+  opacity: 1;
+  transform: translateY(-2px);
+}

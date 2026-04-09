@@ -1,32 +1,287 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angela Jasso | Software Developer</title>
 
-    <!-- Global styles -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Primary SEO -->
+    <title>Angela Jasso — Software Developer</title>
+    <meta
+      name="description"
+      content="Angela Jasso is a Software Developer focused on scalable systems, clean architecture, and maintainable web applications."
+    />
+    <meta name="author" content="Angela Jasso" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Angela Jasso — Software Developer" />
+    <meta
+      property="og:description"
+      content="Building scalable digital infrastructure with architectural precision."
+    />
+    <meta property="og:image" content="./assets/preview.png" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/logos/logo.svg"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
+
   <body>
-    <!-- Header / Navbar -->
-    <header>
-      <h1>Angela Jasso</h1>
-      <div id="navbar"></div>
+    <!-- <a href="#main-content" class="skip-link">
+      Saltar al contenido principal
+    </a> -->
+
+    <header class="navbar">
+      <div class="container navbar__content">
+        <!-- Logo -->
+        <div class="navbar__logo">
+          <a href="/" aria-label="Homepage">
+            <img src="./assets/images/logos/logo.svg" alt="Angela Jasso logo" />
+            <span>Angela Jasso</span>
+          </a>
+        </div>
+
+        <!-- Button -->
+        <!-- <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          ☰
+        </button> -->
+
+        <!-- Navegation -->
+        <nav id="main-menu" class="navbar__nav" aria-label="Main navigation">
+          <ul class="navbar__list">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Actions -->
+        <div class="navbar__actions">
+          <a
+            href="https://github.com/angelajasso/"
+            aria-label="Visitar perfil de GitHub de Angela Jasso"
+            class="navbar__icon"
+          >
+            <img src="./assets/images/icons/github.svg" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/angelajasso/"
+            aria-label="Visitar perfil de LinkedIn de Angela Jasso"
+            class="navbar__icon"
+          >
+            <img src="./assets/images/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <button
+            class="toggle"
+            id="toggle-theme"
+            aria-label="Cambiar tema oscuro"
+          >
+            🌙
+          </button>
+        </div>
+      </div>
     </header>
 
-    <!-- Main content -->
-    <main>
-      <section>
-        <h2>Welcome</h2>
-        <p>This is my professional frontend template.</p>
+    <main id="main-content">
+      <!-- Hero -->
+      <section id="hero" class="hero container">
+        <div class="hero-content">
+          <!-- Texto -->
+          <div class="hero-text">
+            <header>
+              <h1>Web & Blockchain Developer</h1>
+            </header>
+
+            <p>
+              Angela Jasso.Construyendo soluciones seguras, transparentes y
+              escalables.
+            </p>
+          </div>
+
+          <!-- Imagen -->
+          <div class="hero-image">
+            <img src="./assets/perfil.jpg" alt="Foto de Angela Jasso" />
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" class="value container">
+        <header>
+          <h2>Cómo trabajo</h2>
+        </header>
+
+        <p>
+          Mi enfoque no es solo hacer que las cosas funcionen, sino construir
+          sistemas que puedan mantenerse, escalar y entenderse fácilmente con el
+          tiempo.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="skills container">
+        <header class="skills-header">
+          <h2>Habilidades</h2>
+          <p>
+            Herramientas y tecnologías que utilizo para construir interfaces web
+            estructuradas, mantenibles y enfocadas en buenas prácticas.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>HTML & CSS</h3>
+            <p>Interfaces semánticas, diseño responsivo, Flexbox y CSS Grid.</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Lógica, manipulación del DOM y estructuras de control.</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Desarrollo Web</h3>
+            <p>
+              Construcción de aplicaciones web con enfoque en buenas prácticas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects container">
+        <header class="projects-header">
+          <h2>Proyectos</h2>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Project Card -->
+          <article class="project-card">
+            <img
+              src="./assets/stock-1.jpg"
+              alt="Vista previa del proyecto Engineering Foundations mostrando estructura de documentación web"
+            />
+
+            <div class="project-content">
+              <h3>Engineering Foundations</h3>
+
+              <p>
+                Structured documentation website built with semantic HTML and
+                clean layout principles.
+              </p>
+
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" class="btn">Live</a>
+                <a href="#" class="btn">Code</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project Card -->
+          <article class="project-card">
+            <img
+              src="./assets/stock-2.jpg"
+              alt="Engineering Foundations project preview"
+            />
+
+            <div class="project-content">
+              <h3>Engineering Foundations</h3>
+
+              <p>
+                Structured documentation website built with semantic HTML and
+                clean layout principles.
+              </p>
+
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" class="btn">Live</a>
+                <a href="#" class="btn">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="proof container">
+        <header>
+          <h2>Prueba de trabajo</h2>
+
+          <p>
+            Forma en la que estructuro, documento y tomo decisiones al construir
+            sistemas.
+          </p>
+        </header>
+
+        <article class="proof-card">
+          <h3>Engineering Foundations</h3>
+
+          <p>
+            Este repositorio refleja cómo abordo el diseño de sistemas, la
+            calidad del código y la mantenibilidad a largo plazo en proyectos
+            reales.
+          </p>
+
+          <ul>
+            <li>Engineering Principles</li>
+            <li>Quality Checklist</li>
+            <li>Learning Log</li>
+          </ul>
+
+          <div class="proof-links">
+            <a href="https://github.com/tu-repo" class="btn">View Repository</a>
+          </div>
+        </article>
+      </section>
+      <section id="contact" class="contact container">
+        <header>
+          <h2>Trabajemos juntos</h2>
+        </header>
+
+        <p>
+          Actualmente estoy abierta a oportunidades donde pueda contribuir en la
+          construcción de sistemas bien estructurados y escalables.
+        </p>
+
+        <a href="mailto:tuemail@email.com" class="btn"> Contactar </a>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>© 2026 Angela Jasso</p>
+    <footer id="footer" class="footer">
+      <div class="container footer-content">
+        <!-- Branding -->
+        <div class="footer-brand">
+          <p class="footer-role">Software Developer</p>
+          <p class="footer-copy">© 2026 Angela Jasso</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav aria-label="Footer navigation" class="footer-nav">
+          <ul>
+            <li><a href="https://github.com/angelajasso/">GitHub</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/angelajasso/">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-    <script src="assets/js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

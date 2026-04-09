@@ -1,22 +1,54 @@
-/* tokens.css */
-
 :root {
-  /* Colors */
-  --color-primary: #2563eb;
-  --color-secondary: #1e293b;
-  --color-background: #ffffff;
-  --color-text: #111827;
+  /* 🎨 PRIMITIVAS */
+  --purple-500: #7c5cff;
 
-  /* Typography */
-  --font-base: 16px;
-  --font-lg: 1.25rem;
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --gray-400: #9ca3af;
+  --gray-50: #f9fafb;
 
-  /* Spacing */
+  /* 🎯 BACKGROUND */
+  --color-bg: var(--gray-900);
+  --color-surface: var(--gray-800);
+
+  /* 🧱 BORDERS */
+  --color-border: var(--gray-700);
+
+  /* ✍️ TEXT */
+  --color-text: var(--gray-50);
+  --color-text-muted: var(--gray-400);
+
+  /* 🔥 BRAND */
+  --color-primary: var(--purple-500);
+  --color-primary-soft: rgba(124, 92, 255, 0.1);
+
+  /* 📏 SPACING */
   --space-sm: 8px;
   --space-md: 16px;
-  --space-lg: 24px;
+  --space-lg: 32px;
+  --space-xl: 80px;
 
-  /* Border radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
+  /* 🔤 TYPOGRAPHY */
+  --font-main: system-ui, sans-serif;
+
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 40px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* 🧱 RADIUS */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* 🌫️ EFFECTS */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  --blur: blur(12px);
 }
