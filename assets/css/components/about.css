@@ -1,0 +1,54 @@
+.about {
+  padding: 4rem 2rem;
+}
+
+.about__container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  gap: 2rem;
+}
+
+/* FOTO */
+.about__image img {
+  width: 60%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* TEXTO */
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about__text {
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* SKILLS */
+.about__skills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.about__skills span {
+  background: rgba(124, 92, 255, 0.1);
+  color: var(--purple-500);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .about__container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}

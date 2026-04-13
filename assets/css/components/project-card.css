@@ -14,3 +14,76 @@
   transform: translateY(-6px);
   border-color: var(--color-primary);
 }
+
+.projects {
+  padding: 4rem 2rem;
+}
+
+.projects__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* GRID */
+.projects__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* CARD */
+.project {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* TEXTO */
+.project__name {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.project__description {
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* TECH */
+.project__tech {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project__tech span {
+  background: rgba(124, 92, 255, 0.1);
+  color: var(--purple-500);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+/* LINKS */
+.project__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project__link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--purple-500);
+}
