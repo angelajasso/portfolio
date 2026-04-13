@@ -95,28 +95,32 @@
 
     <main id="main-content">
       <!-- Hero -->
-      <section id="hero" class="hero container">
-        <div class="hero-content">
-          <!-- Texto -->
-          <div class="hero-text">
-            <header>
-              <h1>Web & Blockchain Developer</h1>
-            </header>
+      <section class="hero container">
+        <div class="hero__container">
+          <!-- IZQUIERDA -->
+          <div class="hero__content">
+            <h1 class="hero__name">Angela Jasso</h1>
 
-            <p>
-              Angela Jasso.Construyendo soluciones seguras, transparentes y
-              escalables.
+            <h2 class="hero__title">Web & Blockchain Developer</h2>
+
+            <p class="hero__description">
+              Construyo aplicaciones web modernas y dApps seguras, enfocadas en
+              rendimiento, escalabilidad y experiencia de usuario.
             </p>
           </div>
 
-          <!-- Imagen -->
-          <div class="hero-image">
-            <img src="./assets/perfil.jpg" alt="Foto de Angela Jasso" />
+          <!-- DERECHA -->
+          <div class="hero__visual">
+            <div class="hero__card">
+              <p class="hero__code">
+                { building: "web3", status: "active 🚀" }
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="approach" class="value container">
+      <!-- <section id="approach" class="value container">
         <header>
           <h2>Cómo trabajo</h2>
         </header>
@@ -126,10 +130,10 @@
           sistemas que puedan mantenerse, escalar y entenderse fácilmente con el
           tiempo.
         </p>
-      </section>
+      </section> -->
 
       <!-- Skills -->
-      <section id="skills" class="skills container">
+      <!-- <section id="skills" class="skills container">
         <header class="skills-header">
           <h2>Habilidades</h2>
           <p>
@@ -156,17 +160,56 @@
             </p>
           </article>
         </div>
+      </section> -->
+      <section class="about" id="about">
+        <div class="about__container">
+          <!-- FOTO -->
+          <div class="about__image">
+            <img
+              src="./assets/images/profile/perfil.jpg"
+              alt="Angela Maldonado"
+            />
+          </div>
+
+          <!-- CONTENIDO -->
+          <div class="about__content">
+            <h2 class="about__title">Sobre mí</h2>
+
+            <p class="about__text">
+              Soy desarrolladora web en proceso de especialización en
+              blockchain, enfocada en construir aplicaciones seguras y
+              escalables.
+            </p>
+
+            <p class="about__text">
+              Mi enfoque combina pensamiento lógico con creatividad,
+              influenciado por mi formación musical.
+            </p>
+
+            <p class="about__text">
+              Actualmente estoy desarrollando proyectos con JavaScript y
+              explorando el ecosistema Web3 para crear soluciones reales.
+            </p>
+
+            <div class="about__skills">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Web3</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Projects -->
-      <section id="projects" class="projects container">
+      <!-- <section id="projects" class="projects container">
         <header class="projects-header">
           <h2>Proyectos</h2>
         </header>
 
-        <div class="projects-grid">
-          <!-- Project Card -->
-          <article class="project-card">
+        <div class="projects-grid"> -->
+      <!-- Project Card -->
+      <!-- <article class="project-card">
             <img
               src="./assets/stock-1.jpg"
               alt="Vista previa del proyecto Engineering Foundations mostrando estructura de documentación web"
@@ -190,9 +233,10 @@
                 <a href="#" class="btn">Code</a>
               </div>
             </div>
-          </article>
-          <!-- Project Card -->
-          <article class="project-card">
+          </article> -->
+      <!-- Project Card -->
+      <!-- <article class="project-card">
+
             <img
               src="./assets/stock-2.jpg"
               alt="Engineering Foundations project preview"
@@ -260,28 +304,137 @@
         </p>
 
         <a href="mailto:tuemail@email.com" class="btn"> Contactar </a>
+      </section> -->
+      <section class="projects" id="projects">
+        <div class="projects__container">
+          <h2 class="projects__title">Proyectos</h2>
+
+          <div class="projects__grid">
+            <!-- PROYECTO 1 -->
+            <article class="project">
+              <div class="project__content">
+                <h3 class="project__name">Interactive Music Visualizer</h3>
+
+                <p class="project__description">
+                  Aplicación web que genera visuales en tiempo real a partir de
+                  audio, combinando JavaScript y Web Audio API para crear
+                  experiencias interactivas.
+                </p>
+
+                <div class="project__tech">
+                  <span>JavaScript</span>
+                  <span>Canvas</span>
+                  <span>Web Audio API</span>
+                </div>
+
+                <div class="project__links">
+                  <a href="#" class="project__link">Live Demo</a>
+                  <a href="#" class="project__link">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 2 -->
+            <article class="project">
+              <div class="project__content">
+                <h3 class="project__name">Web3 Dashboard</h3>
+
+                <p class="project__description">
+                  Dashboard para interacción con contratos inteligentes,
+                  permitiendo visualizar datos y ejecutar transacciones en
+                  blockchain.
+                </p>
+
+                <div class="project__tech">
+                  <span>JavaScript</span>
+                  <span>Web3</span>
+                  <span>Solidity</span>
+                </div>
+
+                <div class="project__links">
+                  <a href="#" class="project__link">Live Demo</a>
+                  <a href="#" class="project__link">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof container">
+        <header>
+          <h2>Prueba de trabajo</h2>
+
+          <p>
+            Forma en la que estructuro, documento y tomo decisiones al construir
+            sistemas.
+          </p>
+        </header>
+
+        <article class="proof-card">
+          <h3>Engineering Foundations</h3>
+
+          <p>
+            Este repositorio refleja cómo abordo el diseño de sistemas, la
+            calidad del código y la mantenibilidad a largo plazo en proyectos
+            reales.
+          </p>
+
+          <ul>
+            <li>Engineering Principles</li>
+            <li>Quality Checklist</li>
+            <li>Learning Log</li>
+          </ul>
+
+          <div class="proof-links">
+            <a href="https://github.com/tu-repo" class="btn">View Repository</a>
+          </div>
+        </article>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact__container">
+          <h2 class="contact__title">Contacto</h2>
+
+          <p class="contact__text">
+            Estoy abierta a oportunidades en desarrollo web y blockchain. Si
+            quieres trabajar conmigo o tienes una idea, hablemos.
+          </p>
+
+          <div class="contact__links">
+            <a href="mailto:tuemail@email.com" class="contact__link"> Email </a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="container footer-content">
+      <div class="container footer__container">
         <!-- Branding -->
         <div class="footer-brand">
-          <p class="footer-role">Software Developer</p>
-          <p class="footer-copy">© 2026 Angela Jasso</p>
+          <p class="footer__brand">© 2026 Angela Maldonado.</p>
+
+          <p class="footer__text">Web & Blockchain Developer</p>
         </div>
 
         <!-- Navigation -->
         <nav aria-label="Footer navigation" class="footer-nav">
           <ul>
-            <li><a href="https://github.com/angelajasso/">GitHub</a></li>
             <li>
-              <a href="https://www.linkedin.com/in/angelajasso/">LinkedIn</a>
+              <a href="https://github.com/angelajasso/ " class="footer__link"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/angelajasso/"
+                class="footer__link"
+                >LinkedIn</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

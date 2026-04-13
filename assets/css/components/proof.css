@@ -1,0 +1,105 @@
+/* SECTION */
+.proof {
+  padding: 4rem 2rem;
+}
+
+/* CONTAINER (si ya tienes uno global, puedes omitir esto) */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.proof header {
+  margin-bottom: 2rem;
+}
+
+.proof h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.proof header p {
+  opacity: 0.7;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* CARD */
+.proof-card {
+  background: #111;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* HOVER (microinteracción PRO) */
+.proof-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(124, 92, 255, 0.2);
+}
+
+/* TITLE */
+.proof-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* TEXT */
+.proof-card p {
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* LIST */
+.proof-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.proof-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* LINKS */
+.proof-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* BOTÓN (reutiliza si ya tienes .btn global) */
+.btn {
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--purple-500);
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* EXTRA NOTE */
+.proof-note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .proof-card {
+    max-width: 700px;
+  }
+}

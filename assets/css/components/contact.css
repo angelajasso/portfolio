@@ -1,0 +1,40 @@
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact__container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact__text {
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact__link {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid var(--purple-500);
+  color: var(--purple-500);
+  transition: 0.2s;
+}
+
+.contact__link:hover {
+  background: var(--purple-500);
+  color: white;
+}
