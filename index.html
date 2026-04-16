@@ -83,11 +83,12 @@
             <img src="./assets/images/icons/linkedin.svg" alt="LinkedIn" />
           </a>
           <button
-            class="toggle"
+            class="navbar__toggle"
             id="toggle-theme"
-            aria-label="Cambiar tema oscuro"
+            aria-label="Cambiar tema"
+            aria-pressed="false"
           >
-            🌙
+            <span class="toggle__icon">🌙</span>
           </button>
         </div>
       </div>
@@ -120,47 +121,6 @@
         </div>
       </section>
 
-      <!-- <section id="approach" class="value container">
-        <header>
-          <h2>Cómo trabajo</h2>
-        </header>
-
-        <p>
-          Mi enfoque no es solo hacer que las cosas funcionen, sino construir
-          sistemas que puedan mantenerse, escalar y entenderse fácilmente con el
-          tiempo.
-        </p>
-      </section> -->
-
-      <!-- Skills -->
-      <!-- <section id="skills" class="skills container">
-        <header class="skills-header">
-          <h2>Habilidades</h2>
-          <p>
-            Herramientas y tecnologías que utilizo para construir interfaces web
-            estructuradas, mantenibles y enfocadas en buenas prácticas.
-          </p>
-        </header>
-
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3>HTML & CSS</h3>
-            <p>Interfaces semánticas, diseño responsivo, Flexbox y CSS Grid.</p>
-          </article>
-
-          <article class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Lógica, manipulación del DOM y estructuras de control.</p>
-          </article>
-
-          <article class="skill-card">
-            <h3>Desarrollo Web</h3>
-            <p>
-              Construcción de aplicaciones web con enfoque en buenas prácticas.
-            </p>
-          </article>
-        </div>
-      </section> -->
       <section class="about" id="about">
         <div class="about__container">
           <!-- FOTO -->
@@ -201,110 +161,6 @@
         </div>
       </section>
 
-      <!-- Projects -->
-      <!-- <section id="projects" class="projects container">
-        <header class="projects-header">
-          <h2>Proyectos</h2>
-        </header>
-
-        <div class="projects-grid"> -->
-      <!-- Project Card -->
-      <!-- <article class="project-card">
-            <img
-              src="./assets/stock-1.jpg"
-              alt="Vista previa del proyecto Engineering Foundations mostrando estructura de documentación web"
-            />
-
-            <div class="project-content">
-              <h3>Engineering Foundations</h3>
-
-              <p>
-                Structured documentation website built with semantic HTML and
-                clean layout principles.
-              </p>
-
-              <ul class="project-tech">
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-
-              <div class="project-links">
-                <a href="#" class="btn">Live</a>
-                <a href="#" class="btn">Code</a>
-              </div>
-            </div>
-          </article> -->
-      <!-- Project Card -->
-      <!-- <article class="project-card">
-
-            <img
-              src="./assets/stock-2.jpg"
-              alt="Engineering Foundations project preview"
-            />
-
-            <div class="project-content">
-              <h3>Engineering Foundations</h3>
-
-              <p>
-                Structured documentation website built with semantic HTML and
-                clean layout principles.
-              </p>
-
-              <ul class="project-tech">
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-
-              <div class="project-links">
-                <a href="#" class="btn">Live</a>
-                <a href="#" class="btn">Code</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="proof container">
-        <header>
-          <h2>Prueba de trabajo</h2>
-
-          <p>
-            Forma en la que estructuro, documento y tomo decisiones al construir
-            sistemas.
-          </p>
-        </header>
-
-        <article class="proof-card">
-          <h3>Engineering Foundations</h3>
-
-          <p>
-            Este repositorio refleja cómo abordo el diseño de sistemas, la
-            calidad del código y la mantenibilidad a largo plazo en proyectos
-            reales.
-          </p>
-
-          <ul>
-            <li>Engineering Principles</li>
-            <li>Quality Checklist</li>
-            <li>Learning Log</li>
-          </ul>
-
-          <div class="proof-links">
-            <a href="https://github.com/tu-repo" class="btn">View Repository</a>
-          </div>
-        </article>
-      </section>
-      <section id="contact" class="contact container">
-        <header>
-          <h2>Trabajemos juntos</h2>
-        </header>
-
-        <p>
-          Actualmente estoy abierta a oportunidades donde pueda contribuir en la
-          construcción de sistemas bien estructurados y escalables.
-        </p>
-
-        <a href="mailto:tuemail@email.com" class="btn"> Contactar </a>
-      </section> -->
       <section class="projects" id="projects">
         <div class="projects__container">
           <h2 class="projects__title">Proyectos</h2>
@@ -418,7 +274,7 @@
 
         <!-- Navigation -->
         <nav aria-label="Footer navigation" class="footer-nav">
-          <ul>
+          <ul class="footer__links">
             <li>
               <a href="https://github.com/angelajasso/ " class="footer__link"
                 >GitHub</a

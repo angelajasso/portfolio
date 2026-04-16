@@ -1,5 +1,5 @@
 .about {
-  padding: 4rem 2rem;
+  padding: 4rem var(--space-lg);
 }
 
 .about__container {
@@ -7,17 +7,15 @@
   margin: 0 auto;
 
   display: grid;
-  gap: 2rem;
+  gap: var(--space-lg);
 }
 
-/* FOTO */
 .about__image img {
-  width: 60%;
-  border-radius: 16px;
+  width: 50%;
+  border-radius: var(--radius-md);
   object-fit: cover;
 }
 
-/* TEXTO */
 .about__title {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -29,7 +27,6 @@
   margin-bottom: 1rem;
 }
 
-/* SKILLS */
 .about__skills {
   display: flex;
   gap: 0.5rem;
@@ -38,8 +35,8 @@
 }
 
 .about__skills span {
-  background: rgba(124, 92, 255, 0.1);
-  color: var(--purple-500);
+  background: var(--color-accent);
+  color: var(--color-text-muted);
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
   font-size: 0.85rem;

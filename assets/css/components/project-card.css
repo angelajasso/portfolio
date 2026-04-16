@@ -12,7 +12,7 @@
 
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: var(--color-primary);
+  border-color: var(--color-border);
 }
 
 .projects {
@@ -39,8 +39,8 @@
 .project {
   padding: 1.5rem;
   border-radius: 16px;
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
   transition: transform 0.3s ease;
 }
 
@@ -69,8 +69,8 @@
 }
 
 .project__tech span {
-  background: rgba(124, 92, 255, 0.1);
-  color: var(--purple-500);
+  background: var(--color-accent);
+  color: var(--color-text-muted);
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
   font-size: 0.8rem;
