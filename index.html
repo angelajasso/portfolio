@@ -32,10 +32,6 @@
   </head>
 
   <body>
-    <!-- <a href="#main-content" class="skip-link">
-      Saltar al contenido principal
-    </a> -->
-
     <header class="navbar">
       <div class="container navbar__content">
         <!-- Logo -->
@@ -45,17 +41,6 @@
             <span>Angela Jasso</span>
           </a>
         </div>
-
-        <!-- Button -->
-        <!-- <button
-          class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Abrir menú de navegación"
-          aria-expanded="false"
-          aria-controls="main-menu"
-        >
-          ☰
-        </button> -->
 
         <!-- Navegation -->
         <nav id="main-menu" class="navbar__nav" aria-label="Main navigation">
@@ -102,11 +87,13 @@
           <div class="hero__content">
             <h1 class="hero__name">Angela Jasso</h1>
 
-            <h2 class="hero__title">Web & Blockchain Developer</h2>
+            <h2 class="hero__title">
+              Frontend Developer · Web3 · Creative Coding
+            </h2>
 
             <p class="hero__description">
-              Construyo aplicaciones web modernas y dApps seguras, enfocadas en
-              rendimiento, escalabilidad y experiencia de usuario.
+              Construyo aplicaciones web modernas, enfocadas en rendimiento,
+              escalabilidad y experiencia de usuario.
             </p>
           </div>
 
@@ -134,88 +121,39 @@
           <!-- CONTENIDO -->
           <div class="about__content">
             <h2 class="about__title">Sobre mí</h2>
-
             <p class="about__text">
-              Soy desarrolladora web en proceso de especialización en
-              blockchain, enfocada en construir aplicaciones seguras y
-              escalables.
+              Soy desarrolladora frontend enfocada en crear experiencias web
+              interactivas y atractivas.
             </p>
 
             <p class="about__text">
-              Mi enfoque combina pensamiento lógico con creatividad,
-              influenciado por mi formación musical.
+              Combino interfaces limpias, arquitectura modular y código
+              creativo. para diseñar productos que se sienten como aplicaciones
+              reales, no solo páginas estáticas.
             </p>
 
             <p class="about__text">
-              Actualmente estoy desarrollando proyectos con JavaScript y
-              explorando el ecosistema Web3 para crear soluciones reales.
+              Actualmente estoy explorando Web3 y sistemas interactivos,
+              integrando sonido, movimiento e interacción del usuario en
+              interfaces modernas.
             </p>
 
-            <div class="about__skills">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>Web3</span>
-            </div>
+            <section class="stack">
+              <h2 class="about__title">Tecnologías y enfoque</h2>
+              <p class="about__text">JavaScript · Web3 · Sistemas interactivos · Creative Coding</p>
           </div>
         </div>
       </section>
 
-      <section class="projects" id="projects">
-        <div class="projects__container">
-          <h2 class="projects__title">Proyectos</h2>
-
-          <div class="projects__grid">
-            <!-- PROYECTO 1 -->
-            <article class="project">
-              <div class="project__content">
-                <h3 class="project__name">Interactive Music Visualizer</h3>
-
-                <p class="project__description">
-                  Aplicación web que genera visuales en tiempo real a partir de
-                  audio, combinando JavaScript y Web Audio API para crear
-                  experiencias interactivas.
-                </p>
-
-                <div class="project__tech">
-                  <span>JavaScript</span>
-                  <span>Canvas</span>
-                  <span>Web Audio API</span>
-                </div>
-
-                <div class="project__links">
-                  <a href="#" class="project__link">Live Demo</a>
-                  <a href="#" class="project__link">GitHub</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- PROYECTO 2 -->
-            <article class="project">
-              <div class="project__content">
-                <h3 class="project__name">Web3 Dashboard</h3>
-
-                <p class="project__description">
-                  Dashboard para interacción con contratos inteligentes,
-                  permitiendo visualizar datos y ejecutar transacciones en
-                  blockchain.
-                </p>
-
-                <div class="project__tech">
-                  <span>JavaScript</span>
-                  <span>Web3</span>
-                  <span>Solidity</span>
-                </div>
-
-                <div class="project__links">
-                  <a href="#" class="project__link">Live Demo</a>
-                  <a href="#" class="project__link">GitHub</a>
-                </div>
-              </div>
-            </article>
-          </div>
+      <!-- 🧊 PROJECTS -->
+      <section class="projects__container">
+        <div class="projects__header">
+          <h2>Experiencias interactivas</h2>
+          <p>Proyectos donde combino código, diseño e interacción.</p>
         </div>
-      </section>
+
+        <section class="projects" id="projects"></section>
+        </section>
 
       <section class="proof container">
         <header>
@@ -291,6 +229,6 @@
         </nav>
       </div>
     </footer>
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
   </body>
 </html>
