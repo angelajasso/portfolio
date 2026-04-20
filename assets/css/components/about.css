@@ -10,6 +10,11 @@
   gap: var(--space-lg);
 }
 
+.about__image {
+  display: flex;
+  justify-content: center;
+}
+
 .about__image img {
   width: 50%;
   border-radius: var(--radius-md);
@@ -25,21 +30,6 @@
   opacity: 0.8;
   line-height: 1.6;
   margin-bottom: 1rem;
-}
-
-.about__skills {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.about__skills span {
-  background: var(--color-accent);
-  color: var(--color-text-muted);
-  padding: 0.3rem 0.7rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
 }
 
 /* DESKTOP */

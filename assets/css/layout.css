@@ -1,3 +1,17 @@
+/* 🌟 Glow background */
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--color-primary), transparent);
+  filter: blur(120px);
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
