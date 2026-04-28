@@ -17,6 +17,7 @@
   /* 🎯 SEMÁNTICOS */
   --color-bg: var(--primary-050);
   --color-surface: var(--primary-970);
+  --color-surface-2: var(--primary-900);
   --color-text: var(--primary-950);
   --color-text-muted: var(--primary-100);
   --color-border: var(--primary-990);
