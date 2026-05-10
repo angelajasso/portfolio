@@ -31,8 +31,6 @@
   border-radius: 20px;
   padding: 2rem;
   transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(20px);
   color: var(--color-text-muted);
 }
 

@@ -1,37 +1,68 @@
+// ==============================
+// 🎯 Public API
+// ==============================
+
 export function initEffects() {
   initCursorGlow();
-  initReveal();
-  initYear(); // 👈 nuevo
+  initYear();
 }
 
-// Año automático
+export function runReveal(root = document) {
+  revealElements(root);
+}
+
+// ==============================
+// 🖱️ Cursor Glow
+// ==============================
+
+function initCursorGlow() {
+  document.addEventListener("mousemove", handleMouseMove);
+}
+
+function handleMouseMove(e) {
+  document.body.style.setProperty("--x", `${e.clientX}px`);
+  document.body.style.setProperty("--y", `${e.clientY}px`);
+}
+
+// ==============================
+// 📅 Dynamic Year
+// ==============================
+
 function initYear() {
   const yearEl = document.getElementById("year");
   if (!yearEl) return;
 
-  const currentYear = new Date().getFullYear();
-  yearEl.textContent = currentYear;
+  yearEl.textContent = new Date().getFullYear();
 }
 
-// cursor glow
-function initCursorGlow() {
-  document.addEventListener("mousemove", (e) => {
-    document.body.style.setProperty("--x", e.clientX + "px");
-    document.body.style.setProperty("--y", e.clientY + "px");
+// ==============================
+// ✨ Reveal Animation
+// ==============================
+
+let observer;
+
+function getObserver() {
+  if (observer) return observer;
+
+  observer = new IntersectionObserver(handleIntersect, {
+    threshold: 0.1,
+  });
+
+  return observer;
+}
+
+function handleIntersect(entries, obs) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.add("show");
+    obs.unobserve(entry.target); // 🔥 evita repetir
   });
 }
 
-// reveal
-function initReveal() {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  });
+function revealElements(root) {
+  const elements = root.querySelectorAll(".card");
+  const obs = getObserver();
 
-  setTimeout(() => {
-    document.querySelectorAll(".card").forEach((el) => observer.observe(el));
-  }, 100);
+  elements.forEach((el) => obs.observe(el));
 }
