@@ -2,9 +2,43 @@ import { runReveal } from "../events/effects.js";
 
 function projectCardTemplate(project) {
   return `
-    <div class="card">
-      <h3>${project.name ?? "Untitled Project"}</h3>
+    <article class="featured-card">
+      <div class="ambient-glow"></div>
+
+      <div class="featured-image">
+        <img src=${project.imgUrl} alt=${project.imgAlt} />
+      </div>
+      <div class="featured-content">
+
+      <span class="featured-tag"> ${project.tag}</span>
+
+      <h3> ${project.name}</h3>
+
+      <p>${project.description}</p>
+
+      <div class="tech-stack">
+
+        <span>${project.tech1}</span>
+        <span>${project.tech2}</span>
+        <span>${project.tech3}</span>
+
+      </div>
+
+      <div class="card-links">
+
+        <a href="#">
+          Live Demo →
+        </a>
+
+        <a href="#">
+          GitHub
+        </a>
+
+      </div>
+
     </div>
+
+    </article>
   `;
 }
 
